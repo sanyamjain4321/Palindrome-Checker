@@ -1,49 +1,13 @@
-/**
- * ============================================================
- *  MAIN CLASS - UseCase12PalindromeCheckerApp
- * ============================================================
- *
- * Use Case 12: Strategy Pattern for Palindrome Algorithms
- *
- * Description:
- * This class demonstrates how different palindrome
- * validation algorithms can be selected dynamically
- * at runtime using the Strategy Design Pattern.
- *
- * @author Developer
- * @version 12.0
- */
 
 import java.util.Scanner;
 
-/**
- * ============================================================
- * INTERFACE - PalindromeStrategy
- * ============================================================
- *
- * This interface defines a contract for all
- * palindrome checking algorithms.
- */
+
 interface PalindromeStrategy {
     boolean check(String input);
 }
-
-/**
- * ============================================================
- * CLASS - StackStrategy
- * ============================================================
- *
- * This class provides a Stack-based implementation
- * of the PalindromeStrategy interface.
- */
 class StackStrategy implements PalindromeStrategy {
 
-    /**
-     * Implements palindrome validation using stack.
-     *
-     * @param input String to validate
-     * @return true if palindrome, false otherwise
-     */
+
     public boolean check(String input) {
 
         // Create a stack to store characters
@@ -65,11 +29,7 @@ class StackStrategy implements PalindromeStrategy {
     }
 }
 
-/**
- * ============================================================
- * MAIN APPLICATION
- * ============================================================
- */
+
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
