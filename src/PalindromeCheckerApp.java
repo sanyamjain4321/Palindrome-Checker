@@ -54,7 +54,7 @@ public class PalindromeCheckerApp {
 
         boolean result = strategy.check(input);
 
-        System.out.println("Is it Palindrome? : " + result);
+        System.out.println("Is  Palindrome? : " + result);
 
         scanner.close();
     }
